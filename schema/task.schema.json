@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/star-nebula/SemanticMemory/schema/task.schema.json",
+  "title": "SemanticMemory Task",
+  "type": "object",
+  "required": ["schema", "type", "id", "title", "project", "status"],
+  "properties": {
+    "schema": { "const": "semantic-memory-task/v1" },
+    "type": { "const": "task" },
+    "id": {
+      "type": "string",
+      "pattern": "^task-[a-z0-9]{10}$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "project": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["open", "done", "blocked", "cancelled"] },
+    "priority": { "type": "string" },
+    "created": { "type": "string" },
+    "updated": { "type": "string" },
+    "source": { "type": "string" },
+    "source_quote": { "type": "string" },
+    "claim_ref": { "type": "string" }
+  },
+  "additionalProperties": true
+}
