@@ -9,6 +9,8 @@ SemanticMemory 是一个 evidence-first、local-first 的“当前事实与任�
 它把 Agent 现在应当相信的 claim、仍需执行的 task 保存为可读 Markdown，并通过
 轻量 CLI 与 MCP stdio server 提供访问。
 
+![SemanticMemory 与 ReMe 架构](docs/figures/architecture.svg)
+
 它适合作为 [ReMe](https://github.com/agentscope-ai/ReMe) 的配套项目：
 
 | 层次 | 回答的问题 | 存储内容 |

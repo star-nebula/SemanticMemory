@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">SemanticMemory and ReMe architecture</title>
+  <desc id="desc">ReMe keeps episodic evidence. SemanticMemory keeps current claims, tasks, review state, and source pointers.</desc>
+  <rect width="1280" height="560" fill="#f7f8f6"/>
+  <rect x="42" y="38" width="1196" height="484" rx="8" fill="#ffffff" stroke="#d8ddd8" stroke-width="2"/>
+  <text x="82" y="92" fill="#202522" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Two layers of agent memory</text>
+  <text x="82" y="124" fill="#5d665f" font-family="Segoe UI, Arial, sans-serif" font-size="18">Evidence stays historical. Current truth stays reviewable.</text>
+
+  <rect x="82" y="162" width="438" height="246" rx="8" fill="#eef8f5" stroke="#8bc9b8" stroke-width="2"/>
+  <rect x="108" y="188" width="138" height="34" rx="6" fill="#177b68"/>
+  <text x="177" y="211" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">ReMe</text>
+  <text x="108" y="258" fill="#173c34" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">What happened?</text>
+  <text x="108" y="292" fill="#48635c" font-family="Segoe UI, Arial, sans-serif" font-size="17">Episodic evidence and original context</text>
+  <text x="108" y="334" fill="#253b35" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sessions · daily notes · digests · resources</text>
+  <text x="108" y="368" fill="#253b35" font-family="Segoe UI, Arial, sans-serif" font-size="18">Timelines · relationships · source search</text>
+
+  <rect x="760" y="162" width="438" height="246" rx="8" fill="#fff5ef" stroke="#e5ad86" stroke-width="2"/>
+  <rect x="786" y="188" width="220" height="34" rx="6" fill="#b7502e"/>
+  <text x="896" y="211" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">SemanticMemory</text>
+  <text x="786" y="258" fill="#4a2618" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">What is true now?</text>
+  <text x="786" y="292" fill="#715245" font-family="Segoe UI, Arial, sans-serif" font-size="17">Reviewed current facts and actions</text>
+  <text x="786" y="334" fill="#3d2a22" font-family="Segoe UI, Arial, sans-serif" font-size="18">Claims · tasks · lifecycle · review state</text>
+  <text x="786" y="368" fill="#3d2a22" font-family="Segoe UI, Arial, sans-serif" font-size="18">Markdown · CLI · MCP sidecar</text>
+
+  <path d="M520 285 H760" fill="none" stroke="#343b36" stroke-width="3"/>
+  <path d="M748 274 L762 285 L748 296" fill="none" stroke="#343b36" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="540" y="240" width="200" height="90" rx="8" fill="#ffffff" stroke="#cdd3ce" stroke-width="2"/>
+  <text x="640" y="272" text-anchor="middle" fill="#202522" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Evidence handoff</text>
+  <text x="640" y="300" text-anchor="middle" fill="#59615b" font-family="Segoe UI, Arial, sans-serif" font-size="15">exact quote</text>
+  <text x="640" y="322" text-anchor="middle" fill="#59615b" font-family="Segoe UI, Arial, sans-serif" font-size="15">optional reme_ref</text>
+
+  <rect x="82" y="438" width="1116" height="48" rx="6" fill="#202522"/>
+  <text x="640" y="469" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600">ReMe remembers what happened. SemanticMemory tracks what is still true.</text>
+</svg>
