@@ -13,6 +13,7 @@ All notable changes to this project are documented here.
 - Renamed the Python import namespace to `semantic_memory_reme`.
 - Clarified that SemanticMemory is a community ReMe companion, not an official
   ReMe package.
+- Deferred PyPI publication; GitHub Release wheel is the supported install path.
 
 ## [0.1.0] - 2026-10-31
 

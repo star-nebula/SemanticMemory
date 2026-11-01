@@ -19,7 +19,8 @@ SemanticMemory keeps reviewed current facts, source quotes, and related tasks.
 ## 60-Second Demo
 
 ```bash
-python -m pip install semantic-memory-reme
+python -m pip install \
+  https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 semantic-memory demo
 ```
 
@@ -60,7 +61,8 @@ Body:
 > Quick demo:
 >
 > ```bash
-> python -m pip install semantic-memory-reme
+> python -m pip install \
+>   https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 > semantic-memory demo
 > ```
 >
@@ -84,7 +86,8 @@ Description:
 Install:
 
 ```bash
-python -m pip install semantic-memory-reme
+python -m pip install \
+  https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 ```
 
 Configuration:
@@ -158,13 +161,14 @@ Opening:
 > 一条命令看完整流程：
 >
 > ```bash
-> python -m pip install semantic-memory-reme
+> python -m pip install \
+>   https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 > semantic-memory demo
 > ```
 
 ## Launch Checklist
 
-- [ ] PyPI install succeeds
+- [ ] GitHub Release wheel install succeeds
 - [ ] GitHub release is public
 - [ ] ReMe Show and tell post is published
 - [ ] ReMe documentation PR is coordinated with maintainers

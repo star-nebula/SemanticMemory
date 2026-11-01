@@ -41,18 +41,27 @@ the source of truth.
 
 Python 3.11 or newer is required.
 
-The distribution is prepared as `semantic-memory-reme`:
+PyPI publication is intentionally deferred. Install the current wheel directly
+from the GitHub Release:
 
 ```bash
-python -m pip install semantic-memory-reme
+python -m pip install \
+  https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 ```
 
-Until the first PyPI release is published, install from source:
+For development, install from source:
 
 ```bash
 git clone https://github.com/star-nebula/SemanticMemory.git
 cd SemanticMemory
 python -m pip install -e ".[dev]"
+```
+
+If pip is unavailable, the source tree can be run with Python 3.11+ and PyYAML
+already installed:
+
+```bash
+PYTHONPATH=src python -m semantic_memory_reme demo
 ```
 
 ## Quick Start

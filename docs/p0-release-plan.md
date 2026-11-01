@@ -15,6 +15,7 @@ community companion.
 - Release version becomes `0.1.1`.
 - The project is explicitly described as a community companion, not an official
   ReMe package.
+- PyPI publication is deferred; GitHub Release is the active distribution channel.
 
 ## Tasks
 
@@ -54,8 +55,8 @@ community companion.
 ### 6. Publication
 
 - [ ] Merge the release branch.
-- [ ] Configure PyPI Trusted Publishing if credentials are available.
-- [ ] Create the `v0.1.1` GitHub release after PyPI succeeds.
+- [ ] Keep PyPI Trusted Publishing deferred until the owner enables mandatory 2FA.
+- [ ] Publish the `v0.1.1` GitHub release with wheel and sdist assets.
 - [ ] Announce the release in ReMe community channels only after install succeeds.
 
 ## Stop Conditions
@@ -63,11 +64,11 @@ community companion.
 - A namespace or PyPI conflict is found.
 - The release audit reports private content.
 - Tests, build, or wheel installation fail.
-- PyPI Trusted Publishing is not configured.
+- The GitHub Release assets fail validation.
 
 ## Success Criteria
 
-- A user can install `semantic-memory-reme` from PyPI.
+- A user can install `semantic-memory-reme` from the GitHub Release wheel.
 - `semantic-memory demo` gives a complete, inspectable example in under one minute.
 - The repository clearly explains the ReMe relationship without implying official
   endorsement.
