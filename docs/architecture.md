@@ -66,7 +66,7 @@ The server does not import ReMe.
 
 ## Root Resolution
 
-All entry points share `semantic_memory.paths`:
+All entry points share `semantic_memory_reme.paths`:
 
 1. explicit `--root`;
 2. `SEMANTIC_MEMORY_ROOT`;

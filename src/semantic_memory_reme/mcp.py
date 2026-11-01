@@ -13,6 +13,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from . import __version__
 from . import claims as sm
 from . import paths
 from . import tasks as tm
@@ -22,7 +23,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 SERVER_NAME = "SemanticMemory"
-SERVER_VERSION = "0.1.0"
+SERVER_VERSION = __version__
 
 
 def dumps(value):

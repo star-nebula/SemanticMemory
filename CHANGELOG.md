@@ -4,6 +4,16 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-01
+
+### Changed
+
+- Renamed the PyPI distribution to `semantic-memory-reme` to avoid the existing
+  `semantic-memory` package.
+- Renamed the Python import namespace to `semantic_memory_reme`.
+- Clarified that SemanticMemory is a community ReMe companion, not an official
+  ReMe package.
+
 ## [0.1.0] - 2026-10-31
 
 ### Added

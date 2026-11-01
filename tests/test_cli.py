@@ -12,8 +12,8 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from semantic_memory import cli
-from semantic_memory import paths
+from semantic_memory_reme import cli
+from semantic_memory_reme import paths
 
 
 class CliTests(unittest.TestCase):
@@ -89,6 +89,17 @@ class CliTests(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertEqual(error, "")
         self.assertEqual([item["id"] for item in json.loads(output)], [added["id"]])
+
+    def test_demo_runs_in_a_temporary_workspace(self) -> None:
+        code, output, error = self.run_cli(["demo", "--json"])
+
+        self.assertEqual(code, 0)
+        self.assertEqual(error, "")
+        payload = json.loads(output)
+        self.assertTrue(payload["temporary"])
+        self.assertEqual(payload["claim"]["id"], payload["search"][0]["id"])
+        self.assertEqual(payload["task"]["claim_ref"], payload["claim"]["id"])
+        self.assertFalse(self.root.exists())
 
 
 if __name__ == "__main__":

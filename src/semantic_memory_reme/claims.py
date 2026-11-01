@@ -241,7 +241,7 @@ def load_claims(root: Path) -> tuple[dict[str, dict[str, Any]], dict[str, Path]]
 def resolve_source_path(root: Path, raw_path: str) -> Path:
     path = Path(raw_path)
     if path.is_absolute():
-        return path
+        return path.resolve()
     return (root / path).resolve()
 
 

@@ -19,6 +19,9 @@ SemanticMemory 是一个 evidence-first、local-first 的“当前事实与任�
 SemanticMemory 不 import ReMe 核心代码。可选字段 `reme_ref` 只负责把当前 claim
 指回 ReMe 证据，不成为运行时硬依赖。
 
+本项目是 ReMe 的社区配套项目，不是 ReMe 官方包。PyPI 发行名为
+`semantic-memory-reme`，Python import 命名空间为 `semantic_memory_reme`。
+
 ## 为什么
 
 Agent 记忆经常混在一起的三件事是：
@@ -34,6 +37,14 @@ SemanticMemory 把后两者保存为确定性文件，并显式记录来源、�
 
 需要 Python 3.11 或更高版本。
 
+发行包名规划为 `semantic-memory-reme`：
+
+```bash
+python -m pip install semantic-memory-reme
+```
+
+在首个 PyPI 版本发布前，请从源码安装：
+
 ```bash
 git clone https://github.com/star-nebula/SemanticMemory.git
 cd SemanticMemory
@@ -41,6 +52,14 @@ python -m pip install -e ".[dev]"
 ```
 
 ## 快速开始
+
+先运行一个不落盘、可完整查看的示例：
+
+```bash
+semantic-memory demo
+```
+
+demo 会在临时目录创建 claim、来源 quote、关联 task，并立即返回搜索结果。
 
 初始化私有工作区：
 
@@ -103,6 +122,7 @@ semantic-memory task list --root .semantic-memory --json
 
 ```text
 semantic-memory init
+semantic-memory demo
 semantic-memory validate
 semantic-memory search QUERY
 semantic-memory get CLAIM_ID
