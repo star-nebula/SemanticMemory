@@ -19,6 +19,10 @@ It is designed to pair with [ReMe](https://github.com/agentscope-ai/ReMe):
 SemanticMemory does not import ReMe core code. The optional `reme_ref` field points
 back to ReMe evidence without making ReMe a runtime dependency.
 
+This is a community companion, not an official ReMe package. The PyPI distribution
+name is `semantic-memory-reme`; the Python import namespace is
+`semantic_memory_reme`.
+
 ## Why
 
 Agent memory usually mixes three different things:
@@ -35,6 +39,14 @@ the source of truth.
 
 Python 3.11 or newer is required.
 
+The distribution is prepared as `semantic-memory-reme`:
+
+```bash
+python -m pip install semantic-memory-reme
+```
+
+Until the first PyPI release is published, install from source:
+
 ```bash
 git clone https://github.com/star-nebula/SemanticMemory.git
 cd SemanticMemory
@@ -42,6 +54,14 @@ python -m pip install -e ".[dev]"
 ```
 
 ## Quick Start
+
+See the complete flow without creating persistent files:
+
+```bash
+semantic-memory demo
+```
+
+The demo creates a temporary claim, source quote, related task, and search result.
 
 Create a private workspace:
 
@@ -105,6 +125,7 @@ are supported for private local use.
 
 ```text
 semantic-memory init
+semantic-memory demo
 semantic-memory validate
 semantic-memory search QUERY
 semantic-memory get CLAIM_ID

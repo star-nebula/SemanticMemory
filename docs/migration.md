@@ -1,14 +1,26 @@
 # Migration from Standalone Scripts
 
+## 0.1.1 Package Rename
+
+The PyPI distribution moved from the unavailable `semantic-memory` name to
+`semantic-memory-reme`. To avoid colliding with an unrelated existing Python
+package, the import namespace moved from `semantic_memory` to
+`semantic_memory_reme`.
+
+The CLI names remain unchanged:
+
+- `semantic-memory`
+- `semantic-memory-mcp`
+
 ## Mapping
 
 The initial open-source package extracts existing standalone scripts:
 
 | Previous file | Package module |
 |---|---|
-| `semantic_memory.py` | `semantic_memory.claims` |
-| `task_memory.py` | `semantic_memory.tasks` |
-| `semantic_memory_mcp.py` | `semantic_memory.mcp` |
+| `semantic_memory.py` | `semantic_memory_reme.claims` |
+| `task_memory.py` | `semantic_memory_reme.tasks` |
+| `semantic_memory_mcp.py` | `semantic_memory_reme.mcp` |
 
 The public schema names remain unchanged:
 

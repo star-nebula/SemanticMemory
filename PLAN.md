@@ -1,5 +1,8 @@
 # SemanticMemory 开源 v0.1.0 实施计划
 
+> 历史计划：v0.1.1 起 PyPI 发行名为 `semantic-memory-reme`，Python 包名为
+> `semantic_memory_reme`。
+
 ## 概述
 
 把现有 `build/lib` 工作区中的 claim/task 核心与 MCP sidecar 迁移为独立 Python

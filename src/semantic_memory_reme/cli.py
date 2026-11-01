@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from . import claims
+from . import demo
 from . import paths
 from . import tasks
 from .errors import WorkspaceError
@@ -33,6 +34,9 @@ def build_parser() -> argparse.ArgumentParser:
     init = sub.add_parser("init", help="create an empty workspace")
     _add_root(init)
     _add_json(init)
+
+    demo_parser = sub.add_parser("demo", help="run a self-contained temporary demo")
+    _add_json(demo_parser)
 
     validate = sub.add_parser("validate", help="validate claims and source evidence")
     _add_root(validate)
@@ -283,6 +287,10 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
+        if args.command == "demo":
+            payload = demo.run_demo()
+            _json(payload) if args.json else demo.print_demo(payload)
+            return 0
         if args.command == "init":
             root = paths.init_workspace(args.root)
             _json({"ok": True, "root": root.as_posix()}) if args.json else print(f"initialized {root}")

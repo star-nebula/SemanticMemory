@@ -9,8 +9,8 @@ import tomllib
 import unittest
 from pathlib import Path
 
-from semantic_memory import __version__
-from semantic_memory import mcp
+from semantic_memory_reme import __version__
+from semantic_memory_reme import mcp
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]

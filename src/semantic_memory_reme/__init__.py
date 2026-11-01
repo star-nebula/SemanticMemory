@@ -4,4 +4,4 @@ from .claims import ClaimError
 from .tasks import TaskError
 
 __all__ = ["ClaimError", "TaskError", "__version__"]
-__version__ = "0.1.0"
+__version__ = "0.1.1"

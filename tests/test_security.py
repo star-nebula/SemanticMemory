@@ -12,10 +12,10 @@ import time
 import unittest
 from pathlib import Path
 
-from semantic_memory import claims
-from semantic_memory import mcp
-from semantic_memory.errors import WorkspaceError
-from semantic_memory import paths
+from semantic_memory_reme import claims
+from semantic_memory_reme import mcp
+from semantic_memory_reme.errors import WorkspaceError
+from semantic_memory_reme import paths
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]

@@ -7,8 +7,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from semantic_memory import claims as sm
-from semantic_memory import mcp
+from semantic_memory_reme import claims as sm
+from semantic_memory_reme import mcp
 
 
 class SemanticMemoryMCPTests(unittest.TestCase):

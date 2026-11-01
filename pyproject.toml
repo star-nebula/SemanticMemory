@@ -3,9 +3,9 @@ requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "semantic-memory"
-version = "0.1.0"
-description = "Evidence-first current facts and tasks for AI agents, designed to pair with ReMe."
+name = "semantic-memory-reme"
+version = "0.1.1"
+description = "Community ReMe companion for evidence-first current facts and tasks."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
@@ -34,8 +34,8 @@ dev = [
 ]
 
 [project.scripts]
-semantic-memory = "semantic_memory.cli:main"
-semantic-memory-mcp = "semantic_memory.mcp:main"
+semantic-memory = "semantic_memory_reme.cli:main"
+semantic-memory-mcp = "semantic_memory_reme.mcp:main"
 
 [project.urls]
 Homepage = "https://github.com/star-nebula/SemanticMemory"
@@ -50,4 +50,4 @@ include-package-data = true
 where = ["src"]
 
 [tool.setuptools.package-data]
-semantic_memory = ["py.typed"]
+semantic_memory_reme = ["py.typed"]

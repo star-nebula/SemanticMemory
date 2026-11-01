@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from semantic_memory import claims as sm
+from semantic_memory_reme import claims as sm
 
 
 class SemanticMemoryTests(unittest.TestCase):

@@ -81,7 +81,7 @@ python -m build
 
 ```text
 SemanticMemory/
-  src/semantic_memory/
+  src/semantic_memory_reme/
     __init__.py
     claims.py          # claim schema、证据、生命周期、搜索
     tasks.py           # Markdown task 生命周期

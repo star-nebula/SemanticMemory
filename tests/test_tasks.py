@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from semantic_memory import tasks as tm
+from semantic_memory_reme import tasks as tm
 
 
 class TaskMemoryTests(unittest.TestCase):
