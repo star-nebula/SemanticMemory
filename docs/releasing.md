@@ -1,6 +1,18 @@
 # Releasing
 
-## One-Time PyPI Setup
+## Current Release Channel
+
+The current release is GitHub-first. PyPI publication is deferred until the
+account owner chooses to enable PyPI's mandatory two-factor authentication.
+
+GitHub Release assets are the supported installation path:
+
+```bash
+python -m pip install \
+  https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
+```
+
+## Optional PyPI Setup
 
 The distribution name is `semantic-memory-reme`.
 
@@ -24,8 +36,8 @@ This avoids storing a PyPI token in GitHub.
 4. Build and install the wheel in a clean environment.
 5. Commit and push through a pull request.
 6. Create a GitHub release with tag `vX.Y.Z`.
-7. Publishing the release triggers `.github/workflows/publish.yml`.
-8. Verify the PyPI project and install from PyPI.
+7. Verify installation from the GitHub Release wheel.
+8. If PyPI is enabled later, manually run `.github/workflows/publish.yml`.
 
 ## Pre-Release Checks
 

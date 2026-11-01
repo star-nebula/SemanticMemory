@@ -39,18 +39,25 @@ SemanticMemory 把后两者保存为确定性文件，并显式记录来源、�
 
 需要 Python 3.11 或更高版本。
 
-发行包名规划为 `semantic-memory-reme`：
+PyPI 暂不发布。当前可直接从 GitHub Release 安装 wheel：
 
 ```bash
-python -m pip install semantic-memory-reme
+python -m pip install \
+  https://github.com/star-nebula/SemanticMemory/releases/download/v0.1.1/semantic_memory_reme-0.1.1-py3-none-any.whl
 ```
 
-在首个 PyPI 版本发布前，请从源码安装：
+开发环境仍可从源码安装：
 
 ```bash
 git clone https://github.com/star-nebula/SemanticMemory.git
 cd SemanticMemory
 python -m pip install -e ".[dev]"
+```
+
+如果完全不使用 pip，可在已经安装 Python 3.11+ 与 PyYAML 的环境中直接从源码运行：
+
+```bash
+PYTHONPATH=src python -m semantic_memory_reme demo
 ```
 
 ## 快速开始
