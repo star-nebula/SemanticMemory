@@ -9,6 +9,8 @@ SemanticMemory is an evidence-first, local-first store for the facts and tasks a
 AI agent should treat as current. It keeps claims and tasks in readable Markdown
 and exposes them through a small CLI and an MCP stdio server.
 
+![SemanticMemory and ReMe architecture](docs/figures/architecture.svg)
+
 It is designed to pair with [ReMe](https://github.com/agentscope-ai/ReMe):
 
 | Layer | Answers | Storage |
