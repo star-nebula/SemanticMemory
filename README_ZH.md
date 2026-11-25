@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/star-nebula/SemanticMemory/actions/workflows/ci.yml/badge.svg)](https://github.com/star-nebula/SemanticMemory/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![star-nebula/SemanticMemory MCP server](https://glama.ai/mcp/servers/star-nebula/SemanticMemory/badges/score.svg)](https://glama.ai/mcp/servers/star-nebula/SemanticMemory)
 
 SemanticMemory 是一个 evidence-first、local-first 的“当前事实与任务”存储层。
 它把 Agent 现在应当相信的 claim、仍需执行的 task 保存为可读 Markdown，并通过

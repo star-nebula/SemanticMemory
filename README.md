@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/star-nebula/SemanticMemory/actions/workflows/ci.yml/badge.svg)](https://github.com/star-nebula/SemanticMemory/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![star-nebula/SemanticMemory MCP server](https://glama.ai/mcp/servers/star-nebula/SemanticMemory/badges/score.svg)](https://glama.ai/mcp/servers/star-nebula/SemanticMemory)
 
 SemanticMemory is an evidence-first, local-first store for the facts and tasks an
 AI agent should treat as current. It keeps claims and tasks in readable Markdown
